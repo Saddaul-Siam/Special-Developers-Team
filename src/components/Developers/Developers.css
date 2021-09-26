@@ -1,0 +1,15 @@
+.header{
+  padding: 20px;
+  margin-bottom: 50px;
+  background-color: rgb(235, 174, 174);
+}
+.developer-container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  padding-left:100px ;
+}
+
+.layout{
+  display: flex;
+}
