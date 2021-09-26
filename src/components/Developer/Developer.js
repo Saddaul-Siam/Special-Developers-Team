@@ -1,7 +1,7 @@
 import React from 'react';
 import './Developer.css'
 const Developer = (props) => {
-  console.log(props);
+  // console.log(props);
   const { name, experience, skill, img, salary,country } = props.developer;
   return (
     <div id='' className=''>
@@ -12,7 +12,7 @@ const Developer = (props) => {
         <h5>experience: {experience}</h5>
         <h5>country: {country}</h5>
         <h6>salary: {salary}</h6>
-        <button className="btn btn-info text-white text-center px-5 fs-5 rounded-3 f">Add to cart</button>
+        <button onClick={()=>props.handleAddToCart(props.developer)} className="btn btn-info text-white text-center px-5 fs-5 rounded-3 f"><i class="fas fa-cart-plus"></i> Add to cart</button>
       </div>
     </div>
   );
